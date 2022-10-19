@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  ocr:
+    container_name: ocr
+    stdin_open: true
+    build: .
+    volumes:
+      - .:/home/work
+    command: python3 main.py
